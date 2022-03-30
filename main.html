@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo.png">
+    <title>Starbucks</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+</head>
+<body>
+
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#about" class="logo">
+                <img src="img/logo.png" alt="">
+            </a>
+            <div class="toggle" onclick="toggleMenu();"></div>
+            <ul class="navigation">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </header>
+
+        <div class="content" id="home">
+            <div class="textBox">
+                <h2>It's not just Coffee <br>It's <span><b>Starbucks</b></span> </h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, ex, error cumque vitae, optio reprehenderit aut possimus saepe accusamus eaque facere perspiciatis architecto tempora cum expedita. Aliquid provident nesciunt voluptas.</p>
+                <a href="">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="img/img1.png" alt="" class="starbucks">
+            </div>    
+        </div>
+
+        <ul class="thumb">
+            <li><img src="img/img1.png" onclick="imgSlider('img/img1.png');changeCircleColor('#017143')"></li>
+            <li><img src="img/img2.png" onclick="imgSlider('img/img2.png');changeCircleColor('#eb7495')"></li>
+            <li><img src="img/img3.png" onclick="imgSlider('img/img3.png');changeCircleColor('#d752b1')"></li>
+        </ul>
+    </section>
+
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="img/1.jpg" alt="">
+        </div>
+        <div class="about-text">
+            <h2>Our History</h2>
+            <br>
+            <p>Our Coffee Since 1971, <br> it always has been and will always be about quality. We’re passionate about ethically sourcing only the finest Arabica coffee beans and roasting them with great care. Our passion for coffee is rivaled only by our love of sharing it.</p>
+            <p>How to Brew, It’s surprising how different brewing methods can enhance particular characteristics in your coffee. Let us help you unlock the full potential of your coffee—for the perfect cup every time.</p>
+        </div>
+    </section>
+
+    
+
+    <div class="contact-wrap" id="contact">
+        <div class="contact-in">
+            <h1><b>Contact Info</b></h1>
+            <h2>Phone</h2>
+            <p>123-456-789</p>
+            <h2> Email</h2>
+            <p>starbucks@gmail.com</p>
+            <h2>Address</h2>
+            <p>Bogor, West Java, Indonesia</p>
+        </div>  
+        <div class="contact-in">
+            <h1><b>Send a Message</b></h1>
+            <form>
+                <input type="text" placeholder="Full Name" class="contact-in-input">
+                <input type="text" placeholder="Email" class="contact-in-input">
+                <input type="text" placeholder="Subject" class="contact-in-input">
+                <textarea placeholder="Message" class="contact-in-textarea"></textarea>
+                <input type="submit" value="SUBMIT" class="contact-in-btn">
+            </form>
+        </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1982.1467864456338!2d106.84141818479729!3d-6.484456799664514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c1bfeee281e9%3A0x60ed381d5480b061!2sStarbucks%20Cibinong%20City%20Mall!5e0!3m2!1sid!2sid!4v1647564951914!5m2!1sid!2sid" width="100%" height="308px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Starbucks</h4>
+                    <ul>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet voluptates aspernatur, quas magnam velit.</p>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Order status</a></li>
+                        <li><a href="#">Payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>View Guides</h4>
+                    <ul>
+                        <li><a href="">Features</a></li>
+                        <li><a href="">Careers</a></li>
+                        <li><a href="">Blog Posts</a></li>
+                        <li><a href="">Our Branches</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Starbucks</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/alviaaarahmah/"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+    
+
+    <div class="copyright">
+        <p>&#169; Starbucks All right reserved @alviaaarahmah</p>
+    </div>
+
+
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.starbucks').src = anything;
+        }
+
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+
+        function toggleMenu(){
+            var menuToggle = document.querySelector('.toggle');
+            var navigation = document.querySelector('.navigation')
+            menuToggle.classList.toggle('active')
+            navigation.classList.toggle('active')
+        } 
+    </script>
+    
+</body>
+</html>
